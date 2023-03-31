@@ -13,15 +13,14 @@ export async function loader({ request }) {
   const url = new URL(request.url);
 }
 
-export async function action() {
-}
+export async function action() {}
 
 export default function LandingRoot() {
   const navigation = useNavigation();
 
   return (
     <>
-      <div class="navbar bg-base-100">
+      <div class="navbar bg-base-100 px-2 md:px-10 shadow-lg">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -45,76 +44,104 @@ export default function LandingRoot() {
               class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Item 1</a>
-              </li>
-              <li tabindex="0">
-                <a class="justify-between">
-                  Parent
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-                </a>
-                <ul class="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
+                <NavLink
+                  to={`cv`}
+                  className={({ isActive, isPending }) =>
+                    isActive ? "active" : isPending ? "pending" : ""
+                  }
+                >
+                  <p>CV</p>
+                  <span>★</span>
+                </NavLink>
+
+                <NavLink
+                  to={`projects`}
+                  className={({ isActive, isPending }) =>
+                    isActive ? "active" : isPending ? "pending" : ""
+                  }
+                >
+                  <p>PROJECTS</p>
+                  <span>★</span>
+                </NavLink>
+
+                <NavLink
+                  to={`skills`}
+                  className={({ isActive, isPending }) =>
+                    isActive ? "active" : isPending ? "pending" : ""
+                  }
+                >
+                  <p>SKILLS</p>
+                  <span>★</span>
+                </NavLink>
+                <NavLink
+                  to={`features`}
+                  className={({ isActive, isPending }) =>
+                    isActive ? "active" : isPending ? "pending" : ""
+                  }
+                >
+                  <p>FEATURES</p>
+                  <span>★</span>
+                </NavLink>
               </li>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a class="btn btn-ghost normal-case text-xl font-bold">BABENG</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
-            </li>
-            <li tabindex="0">
-              <a>
-                Parent
-                <svg
-                  class="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a>
-              <ul class="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
+              <NavLink
+                to={`cv`}
+                className={({ isActive, isPending }) =>
+                  isActive ? "active" : isPending ? "pending" : ""
+                }
+              >
+                <p>CV</p>
+                <span>★</span>
+              </NavLink>
+
+              <NavLink
+                to={`projects`}
+                className={({ isActive, isPending }) =>
+                  isActive ? "active" : isPending ? "pending" : ""
+                }
+              >
+                <p>PROJECTS</p>
+                <span>★</span>
+              </NavLink>
+
+              <NavLink
+                to={`skills`}
+                className={({ isActive, isPending }) =>
+                  isActive ? "active" : isPending ? "pending" : ""
+                }
+              >
+                <p>SKILLS</p>
+                <span>★</span>
+              </NavLink>
+              <NavLink
+                to={`features`}
+                className={({ isActive, isPending }) =>
+                  isActive ? "active" : isPending ? "pending" : ""
+                }
+              >
+                <p>FEATURES</p>
+                <span>★</span>
+              </NavLink>
             </li>
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Get started</a>
+          <a
+            href="https://github.com/godgodwinter/react-2-basic-23-03-31"
+            target="blank"
+            className="btn"
+          >
+            React ^18.2.0
+          </a>
         </div>
       </div>
-      <div
-        id="detail"
-      >
+      <div id="detail">
         <Outlet />
       </div>
     </>
