@@ -82,6 +82,15 @@ export default function LandingRoot() {
                   <p>FEATURES</p>
                   <span>★</span>
                 </NavLink>
+                <NavLink
+                  to={`progress`}
+                  className={({ isActive, isPending }) =>
+                    isActive ? "active" : isPending ? "pending" : ""
+                  }
+                >
+                  <p>PROGRESS</p>
+                  <span>★</span>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -127,6 +136,15 @@ export default function LandingRoot() {
               >
                 <p>FEATURES</p>
                 <span>★</span>
+              </NavLink>
+              <NavLink
+                to={`progress`}
+                className={({ isActive, isPending }) =>
+                  isActive ? "active" : isPending ? "pending" : ""
+                }
+              >
+                <p>PROGRESS</p>
+                {/* <span>★</span> */}
               </NavLink>
             </li>
           </ul>

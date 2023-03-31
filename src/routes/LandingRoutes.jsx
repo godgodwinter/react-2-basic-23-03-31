@@ -5,6 +5,8 @@ import FeaturesRoot from "@/routes/landing/features/FeaturesRoot";
 import FeaturesIndex from "@/routes/landing/features/FeaturesIndex";
 import FeaturesToast from "@/routes/landing/features/FeaturesToast";
 
+import ProgressRoot from "@/routes/landing/progress/ProgressRoot";
+
 import ErrorPage from "@/error-page";
 
 const LandingRoutes = [
@@ -36,6 +38,10 @@ const LandingRoutes = [
             element: <FeaturesToast />,
           },
         ],
+      },
+      {
+        path: "progress",
+        element: <ProgressRoot />,
       },
     ],
   },
