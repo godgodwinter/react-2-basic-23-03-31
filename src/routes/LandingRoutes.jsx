@@ -1,9 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import LandingRoot from "@/routes/landing/LandingRoot";
 import LandingIndex from "@/routes/landing/LandingIndex";
+
+import FeaturesRoot from "@/routes/landing/features/FeaturesRoot";
+import FeaturesIndex from "@/routes/landing/features/FeaturesIndex";
+import FeaturesToast from "@/routes/landing/features/FeaturesToast";
+
 import ErrorPage from "@/error-page";
 
 const LandingRoutes = [
@@ -27,19 +28,15 @@ const LandingRoutes = [
       },
       {
         path: "features",
-        element: <LandingIndex />,
+        element: <FeaturesRoot />,
+        children: [
+          { index: true, element: <FeaturesIndex /> },
+          {
+            path: "toast",
+            element: <FeaturesToast />,
+          },
+        ],
       },
-      //     {
-      //       path: "contacts/:contactId/edit",
-      //       element: <EditContact />, //views
-      //       loader: contactLoader,  //get()
-      //       action: editAction, //post
-      //     },
-      //     {
-      //       path: "contacts/:contactId/destroy",
-      //       action: destroyAction,
-      //       errorElement: <div>Oops! There was an error.</div>,
-      //     },
     ],
   },
 ];
