@@ -7,7 +7,6 @@ export default function ProgressRoot() {
           <div class="flex gap-1 items-center">
             ❌ DataTable : react-data-table-component
           </div>
-          <div class="flex gap-1 items-center">❌ Datetime : Momentjs</div>
           <div class="flex gap-1 items-center">❌ Form : formik</div>
           <div class="flex gap-1 items-center">❌ Query : Tanstack Query</div>
           <div class="flex gap-1 items-center">❌ Chart</div>

@@ -55,6 +55,24 @@ export default function FeaturesRoot() {
             </svg>
             <span class="font-bold">CSS : TailwindCss</span>
           </div>
+          <div class="flex gap-1 items-center">
+            <svg
+              width="19"
+              height="19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="m6 9 3 3 5-5" stroke="#A2724E" stroke-width="2"></path>
+            </svg>
+            <NavLink
+              to="/features/moment"
+              className={({ isActive, isPending }) =>
+                isActive ? "active" : isPending ? "pending" : ""
+              }
+            >
+              <span class="font-bold">Datetime : Momentjs</span>
+            </NavLink>
+          </div>
         </div>
       </div>
 

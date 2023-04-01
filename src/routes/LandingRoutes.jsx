@@ -4,6 +4,7 @@ import LandingIndex from "@/routes/landing/LandingIndex";
 import FeaturesRoot from "@/routes/landing/features/FeaturesRoot";
 import FeaturesIndex from "@/routes/landing/features/FeaturesIndex";
 import FeaturesToast from "@/routes/landing/features/FeaturesToast";
+import FeaturesMoment from "@/routes/landing/features/FeaturesMoment";
 
 import ProgressRoot from "@/routes/landing/progress/ProgressRoot";
 
@@ -36,6 +37,10 @@ const LandingRoutes = [
           {
             path: "toast",
             element: <FeaturesToast />,
+          },
+          {
+            path: "moment",
+            element: <FeaturesMoment />,
           },
         ],
       },
