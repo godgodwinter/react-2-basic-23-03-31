@@ -3,15 +3,15 @@ export default function FeaturesRoot() {
   return (
     <>
       <div className="flex justify-center space-x-4 border-solid border-2 border-slate-200">
-        <div class="my-12 grid gap-x-8 gap-y-5 grid-cols-2 md:grid-cols-3">
-          <div class="flex gap-1 items-center">
+        <div className="my-12 grid gap-x-8 gap-y-5 grid-cols-2 md:grid-cols-3">
+          <div className="flex gap-1 items-center">
             <svg
               width="19"
               height="19"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="m6 9 3 3 5-5" stroke="#A2724E" stroke-width="2"></path>
+              <path d="m6 9 3 3 5-5" stroke="#A2724E" strokeWidth="2"></path>
             </svg>
             <NavLink
               to="/features/toast"
@@ -19,50 +19,50 @@ export default function FeaturesRoot() {
                 isActive ? "active" : isPending ? "pending" : ""
               }
             >
-              <span class="font-bold">Toast : react-hot-toast</span>
+              <span className="font-bold">Toast : react-hot-toast</span>
             </NavLink>
           </div>
-          <div class="flex gap-1 items-center">
+          <div className="flex gap-1 items-center">
             <svg
               width="19"
               height="19"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="m6 9 3 3 5-5" stroke="#A2724E" stroke-width="2"></path>
+              <path d="m6 9 3 3 5-5" stroke="#A2724E" strokeWidth="2"></path>
             </svg>
-            <span class="font-bold">Router : ReactRouter</span>
+            <span className="font-bold">Router : ReactRouter</span>
           </div>
-          <div class="flex gap-1 items-center">
+          <div className="flex gap-1 items-center">
             <svg
               width="19"
               height="19"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="m6 9 3 3 5-5" stroke="#A2724E" stroke-width="2"></path>
+              <path d="m6 9 3 3 5-5" stroke="#A2724E" strokeWidth="2"></path>
             </svg>
-            <span class="font-bold">State Management : Recoil</span>
+            <span className="font-bold">State Management : Recoil</span>
           </div>
-          <div class="flex gap-1 items-center">
+          <div className="flex gap-1 items-center">
             <svg
               width="19"
               height="19"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="m6 9 3 3 5-5" stroke="#A2724E" stroke-width="2"></path>
+              <path d="m6 9 3 3 5-5" stroke="#A2724E" strokeWidth="2"></path>
             </svg>
-            <span class="font-bold">CSS : TailwindCss</span>
+            <span className="font-bold">CSS : TailwindCss</span>
           </div>
-          <div class="flex gap-1 items-center">
+          <div className="flex gap-1 items-center">
             <svg
               width="19"
               height="19"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="m6 9 3 3 5-5" stroke="#A2724E" stroke-width="2"></path>
+              <path d="m6 9 3 3 5-5" stroke="#A2724E" strokeWidth="2"></path>
             </svg>
             <NavLink
               to="/features/moment"
@@ -70,7 +70,7 @@ export default function FeaturesRoot() {
                 isActive ? "active" : isPending ? "pending" : ""
               }
             >
-              <span class="font-bold">Datetime : Momentjs</span>
+              <span className="font-bold">Datetime : Momentjs</span>
             </NavLink>
           </div>
         </div>

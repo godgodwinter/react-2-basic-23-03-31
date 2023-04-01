@@ -1,10 +1,10 @@
 export default function LandingIndex() {
   return (
     <>
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content text-center">
-          <div class="max-w-md">
-            <article class="prose">
+      <div className="hero min-h-screen bg-base-200">
+        <div className="hero-content text-center">
+          <div className="max-w-md">
+            <article className="prose">
               <div className="py-10">
                 <p>Hello there, Im</p>
                 <h1>KUKUH SETYA NUGRAHA</h1>
@@ -14,7 +14,7 @@ export default function LandingIndex() {
                 <p>from</p>
                 <h4>Indonesia </h4>
               </div> */}
-              <button class="btn btn-primary">Hire Me</button>
+              <button className="btn btn-primary">Hire Me</button>
             </article>
           </div>
         </div>
